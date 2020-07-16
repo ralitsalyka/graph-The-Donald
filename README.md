@@ -31,7 +31,17 @@
    
 -  $ mongoimport --db {dbName} --collection {colectionName} --file {jsonFileName} [--jsonArray]  - If you want to import database and collections
 
-4. Clone this repo
+4. Clone this repo - git@github.com:ralitsalyka/graph-The-Donald.git
+
+5. In the main folder graphTheDonald run these commands - 
+
+- $ python manage.py migrate
+
+- $ python manage.py makemigrations
+
+- $ python manage.py runserver
+
+
 
 
   
