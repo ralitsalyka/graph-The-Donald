@@ -1,0 +1,47 @@
+
+<canvas id="myChart"></canvas>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js'></script>
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['2014', '2015', '2016', '2017', '2018', '2019', '2020'],
+        datasets: [{
+            label: 'Posts per years.',
+            data: {{data}},
+            backgroundColor: [
+                '#339966',
+                '#339966',
+                '#339966',
+                '#339966',
+                '#339966',
+                '#339966',
+                '#339966'
+            ],
+            borderColor: [
+                '#339966',
+                '#339966',
+                '#339966',
+                '#339966',
+                '#339966',
+                '#339966',
+                '#339966'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>

@@ -1,0 +1,46 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js'></script>
+<canvas id="mixed-chart" ></canvas>
+
+<script>
+new Chart(document.getElementById("mixed-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["2014", "2015", "2016", "2017", "2018", "2019", "2020"],
+      datasets: [{
+          label: "Happy",
+          type: "line",
+          borderColor: "#8e5ea2",
+          data: {{happy}},
+          fill: false
+        }, {
+          label: "Angry",
+          type: "line",
+          borderColor: "#3e95cd",
+          data: {{angry}},
+          fill: false
+        }, {
+          label: "Happy",
+          type: "bar",
+          backgroundColor: "rgba(0,0,0,0.2)",
+          data: {{happy}},
+        }, {
+          label: "Angry",
+          type: "bar",
+          backgroundColor: "rgba(0,0,0,0.2)",
+          backgroundColorHover: "#3e95cd",
+          data: {{angry}}
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      title: {
+        display: true,
+        text: 'How many posts with happy and how many posts with angry does he have?'
+      },
+      legend: { display: true }
+    }
+});
+
+</script>

@@ -1,0 +1,45 @@
+<canvas id="myChart"></canvas>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js'></script>
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+        datasets: [{
+            label: 'Week statistic for only 2014.',
+            data: {{data_week2014}},
+            backgroundColor: [
+                '#002080',
+                '#002080',
+                '#002080',
+                '#002080',
+                '#002080',
+                '#002080',
+                '#002080'
+            ],
+            borderColor: [
+                '#002080',
+                '#002080',
+                '#002080',
+                '#002080',
+                '#002080',
+                '#002080',
+                '#002080'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
