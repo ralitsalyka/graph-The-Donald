@@ -2,10 +2,11 @@
 #### A project that creates statistics for Donald Trump tweets in the period 2014-2020.
 # Used technologies
 **MongoDB**
-
 **Django**
-
 **Charts.js**
+
+
+
 
 <img src="images/main_statistic.png" width = '800' height ='400'>
 <img src="images/week_for_all_years.png" width = '800' height ='400'>
@@ -28,5 +29,5 @@
 
 -  $ sudo service mongod start  - for Linux
    
--  $ mongoimport --db <dbName> --collection <colectionName> --file <jsonFileName> [--jsonArray]  - If you want to import database and collections
+-  $ mongoimport --db {dbName} --collection {colectionName} --file {jsonFileName} [--jsonArray]  - If you want to import database and collections
   
