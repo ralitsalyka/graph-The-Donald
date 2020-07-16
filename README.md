@@ -30,4 +30,8 @@
 -  $ sudo service mongod start  - for Linux
    
 -  $ mongoimport --db {dbName} --collection {colectionName} --file {jsonFileName} [--jsonArray]  - If you want to import database and collections
+
+4. Clone this repo
+
+
   
