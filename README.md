@@ -17,9 +17,13 @@
 <img src="images/week2018.png" width = '800' height ='400'>
 <img src="images/week2019.png" width = '800' height ='400'>
 <img src="images/week2020.png" width = '800' height ='400'>
-# Installation 
+
+# Installation
+
 1. Install MongoDB : https://docs.mongodb.com/manual/administration/install-community/
+
 2. Download all Donald Trump tweets from here - http://trumptwitterarchive.com/data/realdonaldtrump/
+
 3. Start MongoDB server:
 
 -  $ sudo service mongod start  - for Linux
